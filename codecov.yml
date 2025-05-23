@@ -1,4 +1,3 @@
 ignore:
   - "test"
-  - "mason_packages"
   - "node_modules"
