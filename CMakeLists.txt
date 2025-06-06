@@ -106,7 +106,6 @@ if(WIN32 AND CMAKE_JS_NODELIB_DEF AND CMAKE_JS_NODELIB_TARGET)
     # Generate node.lib
     execute_process(
         COMMAND ${CMAKE_AR}
-            /VERBOSE
             /def:${CMAKE_JS_NODELIB_DEF}
             /out:${CMAKE_JS_NODELIB_TARGET}
             ${CMAKE_STATIC_LINKER_FLAGS}
