@@ -1,5 +1,7 @@
 BSD 2-Clause License
 
+Copyright (c) 2025, MapLibre contributors
+
 Copyright (c) 2017, Mapbox
 All rights reserved.
 

@@ -1,30 +1,12 @@
+[![MapLibre Logo](https://maplibre.org/img/maplibre-logo-big.svg)](https://maplibre.org/)
+
 # vtvalidate
 
 Validate vector tiles based on the [Mapbox Vector Tile Specification 2.x](https://www.mapbox.com/vector-tiles/specification/) via [vtzero](https://github.com/mapbox/vtzero).
 
-[![node-cpp-skel](https://raw.githubusercontent.com/mapbox/cpp/master/assets/node-cpp-skel-badge_blue.svg)](https://github.com/mapbox/node-cpp-skel)
-[![Build Status](https://travis-ci.com/mapbox/vtvalidate.svg?branch=master)](https://travis-ci.com/mapbox/vtvalidate)
-[![codecov](https://codecov.io/gh/mapbox/vtvalidate/branch/master/graph/badge.svg)](https://codecov.io/gh/mapbox/vtvalidate)
-
 ## Build & Test
-```shell
-git clone git@github.com:mapbox/vtvalidate.git
-cd vtvalidate
 
-# Build binaries. This looks to see if there were changes in the C++ code. This does not reinstall deps.
-make
-
-# Run tests
-make test
-
-# Cleans your current builds and removes potential cache
-make clean
-
-# Cleans everything, including the things you download from the network in order to compile (ex: npm packages).
-# This is useful if you want to nuke everything and start from scratch.
-# For example, it's super useful for making sure everything works for Travis, production, someone else's machine, etc
-make distclean
-```
+`npm install && npm run test`
 
 ## Usage
  
@@ -34,7 +16,7 @@ make distclean
 
 #### Valid tile
 ```js
-var vtvalidate = require('@mapbox/vtvalidate');
+var vtvalidate = require('@maplibre/vtvalidate');
 
 ...
 
@@ -49,7 +31,7 @@ vtvalidate.isValid(buffer, function(err, result) {
 
 #### Invalid tile
 ```js
-var vtvalidate = require('@mapbox/vtvalidate');
+var vtvalidate = require('@maplibre/vtvalidate');
 
 ...
 
@@ -69,7 +51,7 @@ vtvalidate.isValid(buffer, function(err, result) {
 - Decode properties
 - Decode geometries
 
-Currently, vtvalidate does not check geometries for self-intersections, but planned in [the future](https://github.com/mapbox/core-tech/issues/253). If you'd like to add more extensive tile validation, check out [this example](https://github.com/mapbox/vtzero/blob/master/examples/vtzero-check.cpp).
+Currently, vtvalidate does not check geometries for self-intersections. If you'd like to add more extensive tile validation, check out [this example](https://github.com/mapbox/vtzero/blob/master/examples/vtzero-check.cpp).
 
 
 ## CLI
