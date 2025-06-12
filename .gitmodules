@@ -1,0 +1,18 @@
+[submodule "vendor/protozero"]
+	path = vendor/protozero
+	url = https://github.com/mapbox/protozero.git
+[submodule "vendor/vtzero"]
+	path = vendor/vtzero
+	url = https://github.com/mapbox/vtzero.git
+[submodule "vendor/gzip-hpp"]
+	path = vendor/gzip-hpp
+	url = https://github.com/mapbox/gzip-hpp.git
+[submodule "vendor/node-api-headers"]
+	path = vendor/node-api-headers
+	url = https://github.com/nodejs/node-api-headers.git
+[submodule "vendor/node-addon-api"]
+	path = vendor/node-addon-api
+	url = https://github.com/nodejs/node-addon-api.git
+[submodule "vendor/vcpkg"]
+	path = vendor/vcpkg
+	url = http://github.com/Microsoft/vcpkg

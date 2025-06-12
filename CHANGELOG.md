@@ -1,3 +1,9 @@
+## v0.3.2
+- support for node 22
+- removed `@mapbox/mason-js`, `@mapbox/node-pre-gyp`, `aws-sdk`, `node-addon-api`
+- added `cmake-js`
+- moved to submoduled dependencies
+
 ## v0.3.1
 - support for node 16
 - upgraded `"@mapbox/node-pre-gyp": "^1.0.8"`, `"aws-sdk": "^2.1074.0"`, `"node-addon-api": "^4.3.0"`, `"@mapbox/mvt-fixtures": "~3.6.0"`, `"aws-sdk": "2.1074.0"`, `"bytes": "^3.1.2"`,`"d3-queue": "^3.0.7"`, `"minimist": "~1.2.5"`, `"tape": "^5.5.0"`

@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/vtvalidate",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Simply checks if a vector tile contains valid/invalid geometries",
   "url": "http://github.com/mapbox/vtvalidate",
   "main": "./lib/index.js",
@@ -10,20 +10,16 @@
   },
   "scripts": {
     "test": "tape test/*.test.js",
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "cmake-js compile --CDVCPKG_TARGET_TRIPLET=x64-windows-static",
     "docs": "documentation build src/vtvalidate.cpp --polyglot -f md -o API.md"
   },
   "author": "Mapbox",
   "license": "ISC",
   "dependencies": {
-    "@mapbox/mason-js": "^0.1.5",
-    "@mapbox/node-pre-gyp": "^1.0.8",
-    "aws-sdk": "^2.1074.0",
-    "node-addon-api": "^4.3.0"
+    "cmake-js": "^7.3.1"
   },
   "devDependencies": {
     "@mapbox/mvt-fixtures": "~3.6.0",
-    "aws-sdk": "2.1074.0",
     "bytes": "^3.1.2",
     "d3-queue": "^3.0.7",
     "minimist": "~1.2.5",
@@ -33,10 +29,6 @@
     "vtvalidate": "./bin/vtvalidate.js"
   },
   "binary": {
-    "module_name": "module",
-    "module_path": "./lib/binding/",
-    "host": "https://mapbox-node-binary.s3.amazonaws.com",
-    "remote_path": "./{name}/v{version}/{configuration}/{toolset}/",
-    "package_name": "{platform}-{arch}.tar.gz"
+    "napi_versions": [8]
   }
 }

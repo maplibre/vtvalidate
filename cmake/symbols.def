@@ -1,0 +1,3 @@
+LIBRARY VTVALIDATE
+EXPORTS
+    _napi_register_module_v1 @1
