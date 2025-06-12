@@ -1,19 +1,19 @@
 {
-  "name": "@mapbox/vtvalidate",
+  "name": "@maplibre/vtvalidate",
   "version": "0.3.2",
   "description": "Simply checks if a vector tile contains valid/invalid geometries",
-  "url": "http://github.com/mapbox/vtvalidate",
+  "url": "http://github.com/maplibre/vtvalidate",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mapbox/vtvalidate.git"
+    "url": "git@github.com:maplibre/vtvalidate.git"
   },
   "scripts": {
     "test": "tape test/*.test.js",
     "install": "cmake-js compile --CDVCPKG_TARGET_TRIPLET=x64-windows-static",
     "docs": "documentation build src/vtvalidate.cpp --polyglot -f md -o API.md"
   },
-  "author": "Mapbox",
+  "author": "Maplibre",
   "license": "ISC",
   "dependencies": {
     "cmake-js": "^7.3.1"
