@@ -1,1 +1,2 @@
-Refer to the security policy of MapLibre Native: https://github.com/maplibre/maplibre-native/blob/main/SECURITY.md
+For an up-to-date policy refer to
+https://github.com/maplibre/maplibre/blob/main/SECURITY.md
