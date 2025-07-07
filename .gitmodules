@@ -13,6 +13,3 @@
 [submodule "vendor/node-addon-api"]
 	path = vendor/node-addon-api
 	url = https://github.com/nodejs/node-addon-api.git
-[submodule "vendor/vcpkg"]
-	path = vendor/vcpkg
-	url = http://github.com/Microsoft/vcpkg
