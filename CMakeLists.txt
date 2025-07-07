@@ -3,21 +3,29 @@ cmake_policy(SET CMP0025 NEW)
 set(CMAKE_CXX_STANDARD 17)
 
 if(WIN32)
-    # Windows: Setup vcpkg toolchain and prepare zlib    
+    # Windows: Setup vcpkg toolchain and prepare zlib
+    include(FetchContent)
+    FetchContent_Declare(
+        vcpkg
+        GIT_REPOSITORY https://github.com/microsoft/vcpkg.git
+        GIT_TAG        ce613c41372b23b1f51333815feb3edd87ef8a8b # 2025.04.09
+    )
+    FetchContent_MakeAvailable(vcpkg)
+
     if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
-        set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/vendor/vcpkg/scripts/buildsystems/vcpkg.cmake")
+        set(CMAKE_TOOLCHAIN_FILE "${vcpkg_SOURCE_DIR}/scripts/buildsystems/vcpkg.cmake")
     endif()
     
-    if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/vendor/vcpkg/vcpkg.exe")
+    if(NOT EXISTS "${vcpkg_SOURCE_DIR}/vcpkg.exe")
         execute_process(
             COMMAND
-                CMD /C "${CMAKE_CURRENT_SOURCE_DIR}/vendor/vcpkg/bootstrap-vcpkg.bat"
+                CMD /C "${vcpkg_SOURCE_DIR}/bootstrap-vcpkg.bat"
         )
     endif()
 
     execute_process(
         COMMAND
-            CMD /C "${CMAKE_CURRENT_SOURCE_DIR}/vendor/vcpkg/vcpkg.exe" install
+            CMD /C "${vcpkg_SOURCE_DIR}/vcpkg.exe" install
             zlib:x64-windows-static
     )
 endif()
