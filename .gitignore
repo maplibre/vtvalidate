@@ -4,3 +4,4 @@ build
 .toolchain
 local.env
 npm-debug.log
+vendor/vcpkg
