@@ -22,6 +22,7 @@
     "bin",
     "cmake",
     "lib/index.js",
+    "lib/index.d.ts",
     "src",
     "vendor",
     "CMakeLists.txt"
