@@ -6,12 +6,12 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:maplibre/vtvalidate.git"
+    "url": "https://github.com/maplibre/vtvalidate"
   },
   "scripts": {
     "test": "tape test/*.test.js",
     "install": "cmake-js compile --CDVCPKG_TARGET_TRIPLET=x64-windows-static",
-    "docs": "documentation build src/vtvalidate.cpp --polyglot -f md -o API.md"
+    "docs": "typedoc --entryPoints lib/index.d.ts --out docs/API"
   },
   "author": "Maplibre",
   "license": "ISC",
@@ -32,12 +32,15 @@
     "bytes": "^3.1.2",
     "d3-queue": "^3.0.7",
     "minimist": "~1.2.5",
-    "tape": "^5.5.0"
+    "tape": "^5.5.0",
+    "typedoc": "^0.28.15"
   },
   "bin": {
     "vtvalidate": "./bin/vtvalidate.js"
   },
   "binary": {
-    "napi_versions": [8]
+    "napi_versions": [
+      8
+    ]
   }
 }
