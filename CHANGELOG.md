@@ -1,3 +1,19 @@
+## main
+### ✨ Features and improvements
+- _...Add new stuff here..._
+
+### 🐞 Bug fixes
+- _...Add new stuff here..._
+
+- Migrate to shared release workflow ([#7](https://github.com/maplibre/vtvalidate/pull/7)) (by [mwilsnd](https://github.com/mwilsnd))
+- Add types ([#6](https://github.com/maplibre/vtvalidate/pull/6)) (by [mwilsnd](https://github.com/mwilsnd))
+- Add publishing CI ([#3](https://github.com/maplibre/vtvalidate/pull/3)) (by [mwilsnd](https://github.com/mwilsnd))
+- Obtain vcpkg via FetchContent ([#1](https://github.com/maplibre/vtvalidate/pull/1)) (by [mwilsnd](https://github.com/mwilsnd))
+- Add publishing CI ([#3](https://github.com/maplibre/vtvalidate/pull/3)) (by [mwilsnd](https://github.com/mwilsnd))
+- Obtain vcpkg via FetchContent ([#1](https://github.com/maplibre/vtvalidate/pull/1)) (by [mwilsnd](https://github.com/mwilsnd))
+- Migrate to shared release workflow ([#7](https://github.com/maplibre/vtvalidate/pull/7)) (by [mwilsnd](https://github.com/mwilsnd))
+- Add types ([#6](https://github.com/maplibre/vtvalidate/pull/6)) (by [mwilsnd](https://github.com/mwilsnd))
+- Obtain vcpkg via FetchContent ([#1](https://github.com/maplibre/vtvalidate/pull/1)) (by [mwilsnd](https://github.com/mwilsnd))
 ## v0.3.2
 - support for node 22
 - removed `@mapbox/mason-js`, `@mapbox/node-pre-gyp`, `aws-sdk`, `node-addon-api`
