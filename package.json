@@ -1,6 +1,6 @@
 {
   "name": "@maplibre/vtvalidate",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Simply checks if a vector tile contains valid/invalid geometries",
   "url": "http://github.com/maplibre/vtvalidate",
   "main": "./lib/index.js",
