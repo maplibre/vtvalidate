@@ -5,21 +5,7 @@
 ### 🐞 Bug fixes
 - _...Add new stuff here..._
 
-- Update node to 24.12 for trusted publishing ([#11](https://github.com/maplibre/vtvalidate/pull/11)) (by [mwilsnd](https://github.com/mwilsnd))
-- Bump js version to 0.4.1 ([#10](https://github.com/maplibre/vtvalidate/pull/10)) (by [app/github-actions](https://github.com/app/github-actions))
-- Clone submodules during release ([#9](https://github.com/maplibre/vtvalidate/pull/9)) (by [mwilsnd](https://github.com/mwilsnd))
-- Bump js version to 0.4.0 ([#8](https://github.com/maplibre/vtvalidate/pull/8)) (by [app/github-actions](https://github.com/app/github-actions))
-- Add publishing CI ([#3](https://github.com/maplibre/vtvalidate/pull/3)) (by [mwilsnd](https://github.com/mwilsnd))
-- Obtain vcpkg via FetchContent ([#1](https://github.com/maplibre/vtvalidate/pull/1)) (by [mwilsnd](https://github.com/mwilsnd))
-- Add publishing CI ([#3](https://github.com/maplibre/vtvalidate/pull/3)) (by [mwilsnd](https://github.com/mwilsnd))
-- Obtain vcpkg via FetchContent ([#1](https://github.com/maplibre/vtvalidate/pull/1)) (by [mwilsnd](https://github.com/mwilsnd))
-- Bump js version to 0.4.1 ([#10](https://github.com/maplibre/vtvalidate/pull/10)) (by [app/github-actions](https://github.com/app/github-actions))
-- Clone submodules during release ([#9](https://github.com/maplibre/vtvalidate/pull/9)) (by [mwilsnd](https://github.com/mwilsnd))
-- Obtain vcpkg via FetchContent ([#1](https://github.com/maplibre/vtvalidate/pull/1)) (by [mwilsnd](https://github.com/mwilsnd))
-## 0.4.2
-### ✨ Features and improvements
-
-### 🐞 Bug fixes
+## v0.4.2
 
 ## v0.4.1
 
