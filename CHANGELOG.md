@@ -5,6 +5,8 @@
 ### 🐞 Bug fixes
 - _...Add new stuff here..._
 
+## v0.4.2
+
 ## v0.4.1
 
 ## v0.4.0
